@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Counter & Warning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="counter-card">
+    <header class="card-header">
+      <h2>Live Message Editor</h2>
+      <p>Draft your message below (100 character maximum).</p>
+    </header>
+
+    <div class="input-group">
+      <textarea
+        id="text-input"
+        class="text-input"
+        maxlength="100"
+        placeholder="Start typing your message..."
+        aria-describedby="char-counter"
+      ></textarea>
+      
+      <div id="char-counter" class="char-counter" aria-live="polite">
+        <span id="remaining-count">100</span> / 100 characters remaining
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

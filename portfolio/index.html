@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subhrankur Sahoo - Portfolio</title>
+
+    <!-- External Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS for contact form validation -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div>
+                    <h1>Subhrankur Sahoo</h1>
+                    <p>Computer Science and Engineering Graduate</p>
+
+                    <div class="links">
+                        <a href="mailto:subhrankurs@gmail.com">Email</a>
+                        <a href="https://www.linkedin.com/in/subhrankur-sahoo-429942206/">LinkedIn</a>
+                        <a href="https://github.com/subhrankur">GitHub</a>
+                    </div>
+                </div>
+
+                <img src="assets/Passport Photo.jpg" alt="Subhrankur Sahoo">
+
+            </div>
+            
+            
+        </header>
+
+        <hr>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Science and Engineering graduate with hands-on
+                experience in frontend development, AI/ML model training, and
+                backend technologies. I am interested in data engineering,
+                cloud engineering, microservices, and modern software development.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, Java, JavaScript, C, C++</li>
+                <li><strong>Frontend:</strong> HTML, CSS</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, REST APIs</li>
+                <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
+                <li><strong>Cloud & DevOps:</strong> Docker, AWS basics, Git, GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>1. FAIRHIRE</h3>
+                <p>
+                    A research pipeline for training, evaluating, and debiasing
+                    employability prediction models. The project focuses on
+                    gender, country, and intersectional bias.
+                </p>
+                <p><strong>Technologies:</strong> Python, Scikit-learn, XGBoost, Fairlearn, AIF360, TensorFlow, SHAP</p>
+            </div>
+
+            <div class="project">
+                <h3>2. URL Shortener Web</h3>
+                <p>
+                    A web-based URL shortening application that converts long
+                    URLs into compact and shareable links with reliable redirection.
+                </p>
+                <p><strong>Technologies:</strong> Node.js, Express.js, MongoDB, Postman</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech (CSE):</strong> ITER, SOA University — 9.13 CGPA (2022 - 2026)</li>
+                <li><strong>Class XII:</strong> West End High School — 71.6% (2019)</li>
+                <li><strong>Class X:</strong> West End High School — 72.6% (2017)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section>
+            <h2>Get In Touch</h2>
+
+            <form id="contactForm" class="needs-validation contact-form" novalidate>
+                <div class="contact-form-group">
+                    <label for="contactName">Name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="contactName"
+                        name="name"
+                        placeholder="Enter your name"
+                        minlength="2"
+                        maxlength="50"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Please enter your name (2-50 characters).
+                    </div>
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="contactEmail">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="contactEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        maxlength="100"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="contactSubject"
+                        name="subject"
+                        placeholder="What would you like to discuss?"
+                        minlength="3"
+                        maxlength="100"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Please enter a subject (3-100 characters).
+                    </div>
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea
+                        class="form-control"
+                        id="contactMessage"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        minlength="10"
+                        maxlength="1000"
+                        required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message (10-1000 characters).
+                    </div>
+                </div>
+
+                <button type="submit" class="btn contact-submit">
+                    Send Message
+                </button>
+
+                <p id="contactNote" class="contact-note">
+                    After validation, your email application will open with the message prepared for me.
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Subhrankur Sahoo. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap form validation -->
+    <script>
+        (() => {
+            'use strict';
+
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                form.classList.add('was-validated');
+
+                if (!form.checkValidity()) {
+                    return;
+                }
+
+                const name = document.getElementById('contactName').value.trim();
+                const email = document.getElementById('contactEmail').value.trim();
+                const subject = document.getElementById('contactSubject').value.trim();
+                const message = document.getElementById('contactMessage').value.trim();
+
+                const mailSubject = encodeURIComponent(subject);
+                const mailBody = encodeURIComponent(
+                    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+                );
+
+                window.location.href =
+                    `mailto:subhrankurs@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+            });
+        })();
+    </script>
+
+</body>
+</html>

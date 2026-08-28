@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main class="todo-card">
+        <header class="todo-header">
+            <h1>Task Manager</h1>
+            <p>Keep track of your daily tasks</p>
+        </header>
+
+        <!-- Task Creation Form -->
+        <form id="todo-form" class="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." aria-label="New task input" required />
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+        <!-- Task List Container -->
+        <ul id="todo-list" class="todo-list">
+            <!-- Sample Data Items -->
+            <li class="todo-item">
+                <span class="todo-text">Complete HTML/CSS setup</span>
+                <button class="btn btn-delete" type="button" aria-label="Delete task">Delete</button>
+            </li>
+            <li class="todo-item">
+                <span class="todo-text">Implement form submit event listener</span>
+                <button class="btn btn-delete" type="button" aria-label="Delete task">Delete</button>
+            </li>
+            <li class="todo-item">
+                <span class="todo-text">Handle dynamic element deletion</span>
+                <button class="btn btn-delete" type="button" aria-label="Delete task">Delete</button>
+            </li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
