@@ -1,0 +1,6 @@
+.DS_Store
+
+java/.vscode
+java/bin
+java/lib
+java/README.md
