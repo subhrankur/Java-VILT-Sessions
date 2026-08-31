@@ -59,7 +59,6 @@ public class ListEmployeeManager {
             throw new IllegalArgumentException("Employee cannot be null.");
         }
 
-        // List allows duplicates, so ID validation must be done manually.
         for (Employee existingEmployee : employees) {
 
             if (existingEmployee.id() == employee.id()) {
